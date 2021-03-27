@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Mar 16 21:32:05 2021
-
-@author: yogsg
-"""
 
 import pandas as pd
 import numpy as np
@@ -63,5 +57,5 @@ sc = StandardScaler()
 X_train[:,3:] = sc.fit_transform(X_train[:,3:])
 X_test [:,3:] = sc.transform(X_test[:,3:])
 
-print(X_train)
-print("\n",X_test)
+print("\n X_Train Data -->>\n",X_train)
+print("\n X_Test Data -->>\n",X_test)
